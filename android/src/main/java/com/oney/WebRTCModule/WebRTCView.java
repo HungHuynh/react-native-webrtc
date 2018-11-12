@@ -435,6 +435,10 @@ public class WebRTCView extends ViewGroup {
         requestSurfaceViewRendererLayout();
     }
 
+    public SurfaceViewRenderer getSurfaceView() {
+        return getSurfaceViewRenderer();
+    }
+
     /**
      * Sets the {@code MediaStream} to be rendered by this {@code WebRTCView}.
      * The implementation renders the first {@link VideoTrack}, if any, of the
